@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
-  background-color: rgb(214, 213, 213);
+  background-color: #fdfdfdab;
 }
 
 a {
@@ -13,49 +13,48 @@ a:hover {
   text-decoration: underline;
 }
 
-.container {
+.block__row {
   margin: auto;
-  background-color: white;
+  /* background-color: white; */
   font-size: 12px;
   font-family: Roboto, sans-serif;
 }
 
 @media (max-width: 993px) {
-  .container {
+  .block__row {
     width: 90%;
   }
 }
 
 @media (min-width: 993px) {
-  .container {
+  .block__row {
     width: 50%;
   }
 }
 
-.card {
+.block__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.block__column {
   padding: 15px;
   margin: 5px;
+  border-radius: 5px;
 }
 
-.about {
-  color: black;
-}
-
-.about span {
-  color: gray;
-}
-
-.about {
+.about__row {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  /* flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 0; */
+  flex: 1 0 50%;
 }
 
-.about .main,
-.about .avatar {
-  width: 50%;
-}
-
-.about .avatar {
+.avatar {
   width: 200px;
   border-radius: 5px;
   box-shadow: 4px -4px 15px gray;
