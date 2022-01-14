@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@media (max-width: 993px) {
+  .block__row {
+    width: 90%;
+  }
+}
+
+@media (min-width: 993px) {
+  .block__row {
+    width: 55%;
+  }
+}
+
 html {
-  background-color: #fdfdfdab;
+  background-color: rgb(245, 245, 245);
 }
 
 a {
@@ -14,33 +26,22 @@ a:hover {
 }
 
 .block__row {
-  margin: auto;
-  /* background-color: white; */
-  font-size: 12px;
-  font-family: Roboto, sans-serif;
-}
-
-@media (max-width: 993px) {
-  .block__row {
-    width: 90%;
-  }
-}
-
-@media (min-width: 993px) {
-  .block__row {
-    width: 50%;
-  }
-}
-
-.block__row {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  border: 3px double gray;
 }
 
 .block__column {
   padding: 15px;
-  margin: 5px;
+  margin: 2px;
   border-radius: 5px;
+}
+
+.block__column:not(:first-child) {
+  background-color: #ebebebab;
 }
 
 .about__row {
@@ -58,4 +59,13 @@ a:hover {
   width: 200px;
   border-radius: 5px;
   box-shadow: 4px -4px 15px gray;
+}
+
+.experience__column > h3 {
+  margin-bottom: 2px;
+}
+
+.experience__column > span,
+.education__column > p span {
+  font-weight: bold;
 }
