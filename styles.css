@@ -69,3 +69,55 @@ a:hover {
 .education__column > p span {
   font-weight: bold;
 }
+
+.anim {
+  position: absolute;
+  top: 0;
+  font-size: 10px;
+  background-color: red;
+  opacity: 0.85;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  animation-name: animation;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /*animation-delay: -1s;*/
+  /*animation-fill-mode: forwards;*/
+}
+
+.anim:hover {
+  animation-play-state: paused;
+  background-color: green;
+  color: white;
+}
+
+.anim p {
+  padding: 5px;
+}
+
+.anim p:last-child {
+  display: none;
+}
+
+.anim:hover p:first-child {
+  display: none;
+}
+
+.anim:hover p:last-child {
+  display: block;
+}
+
+@keyframes animation {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 0;
+  }
+  100% {
+    left: 95%;
+  }
+}
