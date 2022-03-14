@@ -40,6 +40,12 @@ a:hover {
   border-radius: 5px;
 }
 
+.contact__row>p>span {
+  font-size: 0.7rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
 .block__column:not(:first-child) {
   background-color: #ebebebab;
 }
@@ -61,12 +67,12 @@ a:hover {
   box-shadow: 4px -4px 15px gray;
 }
 
-.experience__column > h3 {
+.experience__column>h3 {
   margin-bottom: 2px;
 }
 
-.experience__column > span,
-.education__column > p span {
+.experience__column>span,
+.education__column>p span {
   font-weight: bold;
 }
 
@@ -114,9 +120,11 @@ a:hover {
   0% {
     left: 0;
   }
+
   50% {
     border-radius: 0;
   }
+
   100% {
     left: 95%;
   }
