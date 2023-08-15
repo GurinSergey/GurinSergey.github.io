@@ -62,9 +62,9 @@ a:hover {
 }
 
 .avatar {
-  width: 200px;
+  width: 180px;
   border-radius: 5px;
-  box-shadow: 4px -4px 15px gray;
+  box-shadow: 3px -3px 15px gray;
 }
 
 .experience__column>h3 {
